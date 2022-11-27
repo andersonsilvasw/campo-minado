@@ -40,7 +40,6 @@ public class TabuleiroConsole {
 		} finally {
 			entrada.close();
 		}
-		
 	}
 
 	private void cicloDoJogo() {
@@ -61,6 +60,7 @@ public class TabuleiroConsole {
 					tabuleiro.alternarMarcacao(xy.next(), xy.next());
 				}
 			}
+			System.out.println(tabuleiro);
 			System.out.println("Você Ganhou!");
 		} catch (ExplosaoException e) {
 			System.out.println(tabuleiro);
